@@ -1,0 +1,17 @@
+const aniversario = new Date(new Date().getFullYear() + 1, 1, 15);
+const hoje = new Date();
+const diferencaMilissegundos = aniversario - hoje;
+const diferencaDias = Math.ceil(diferencaMilissegundos / (1000 * 60 * 60 * 24));
+console.log("Diferença em dias até o próximo aniversário: ", diferencaDias);
+const ano = hoje.getFullYear();
+const mes = String(hoje.getMonth() + 1).padStart(2, '0'); 
+const dia = String(hoje.getDate()).padStart(2, '0');
+const dataFormatada = `${ano}-${mes}-${dia}`;
+console.log("Data atual formatada: ", dataFormatada);
+const novaData = new Date(hoje);
+novaData.setDate(hoje.getDate() + 30);
+const anoNova = novaData.getFullYear();
+const mesNova = String(novaData.getMonth() + 1).padStart(2, '0');
+const diaNova = String(novaData.getDate()).padStart(2, '0');
+const novaDataFormatada = `${anoNova}-${mesNova}-${diaNova}`;
+console.log("Data atual + 30 dias: ", novaDataFormatada);

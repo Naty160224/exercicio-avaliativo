@@ -1,0 +1,12 @@
+var nulo = null;
+var igualUndefined = nulo == undefined;
+var estritamenteIgualUndefined = nulo === undefined;
+console.log(igualUndefined); 
+console.log(estritamenteIgualUndefined);  
+var indefinido;
+var ehNaN = isNaN(indefinido);
+console.log(ehNaN); 
+var numStr2 = "123abc";
+var convertidoNum = parseFloat(numStr2);
+var ehNaNConvertido = isNaN(convertidoNum);
+console.log(ehNaNConvertido); 
